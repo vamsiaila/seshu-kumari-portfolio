@@ -2,16 +2,16 @@
 
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
-import { 
-    Phone, 
-    Mail, 
-    Instagram, 
-    MapPin, 
-    Sparkles, 
-    Camera, 
-    Crown, 
-    GlassWater, 
-    ArrowRight 
+import {
+    Phone,
+    Mail,
+    Instagram,
+    MapPin,
+    Sparkles,
+    Camera,
+    Crown,
+    GlassWater,
+    ArrowRight,
 } from "lucide-react";
 
 export default function Home() {
@@ -39,13 +39,12 @@ export default function Home() {
 
     return (
         <main className="bg-[#050505] text-white min-h-screen selection:bg-[#BF953F] selection:text-black overflow-hidden relative">
-            
             {/* AMBIENT BACKGROUND GLOWS */}
             <div className="fixed top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#C8A74E] opacity-[0.04] blur-[150px] rounded-full pointer-events-none" />
             <div className="fixed bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-[#BF953F] opacity-[0.03] blur-[150px] rounded-full pointer-events-none" />
 
             {/* STICKY HEADER */}
-            <motion.header 
+            <motion.header
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -53,29 +52,43 @@ export default function Home() {
             >
                 <div className="max-w-7xl mx-auto flex justify-between items-center">
                     {/* Minimal Header Logo / Name */}
-                    <a href="#" className={`text-xl font-light tracking-widest uppercase ${goldGradientText}`}>
+                    <a
+                        href="#"
+                        className={`text-xl font-light tracking-widest uppercase ${goldGradientText}`}
+                    >
                         Seshu Kumari
                     </a>
 
                     {/* Desktop Contact Links with Icons */}
                     <div className="hidden md:flex items-center gap-8 text-sm font-light tracking-wide text-gray-300">
-                        <a href="tel:+919849013227" className="group flex items-center gap-2 hover:text-[#FCF6BA] transition-colors">
+                        <a
+                            href="tel:+919849013227"
+                            className="group flex items-center gap-2 hover:text-[#FCF6BA] transition-colors"
+                        >
                             <Phone className="w-4 h-4 text-[#BF953F] group-hover:scale-110 transition-transform" />
                             +91 98490 13227
                         </a>
-                        <a href="mailto:seshukumari2002@gmail.com" className="group flex items-center gap-2 hover:text-[#FCF6BA] transition-colors">
+                        <a
+                            href="mailto:seshukumari2002@gmail.com"
+                            className="group flex items-center gap-2 hover:text-[#FCF6BA] transition-colors"
+                        >
                             <Mail className="w-4 h-4 text-[#BF953F] group-hover:scale-110 transition-transform" />
                             Email
                         </a>
-                        <a href="https://www.instagram.com/seshu388" target="_blank" rel="noreferrer" className="group flex items-center gap-2 hover:text-[#FCF6BA] transition-colors">
+                        <a
+                            href="https://www.instagram.com/seshu388"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="group flex items-center gap-2 hover:text-[#FCF6BA] transition-colors"
+                        >
                             <Instagram className="w-4 h-4 text-[#BF953F] group-hover:scale-110 transition-transform" />
                             @seshu388
                         </a>
                     </div>
 
                     {/* Mobile Book CTA */}
-                    <a 
-                        href="#contact" 
+                    <a
+                        href="#contact"
                         className="md:hidden border border-[#BF953F] text-[#FCF6BA] px-5 py-2 rounded-full text-xs font-medium tracking-widest uppercase hover:bg-[#BF953F] hover:text-black transition-all"
                     >
                         Book
@@ -92,10 +105,14 @@ export default function Home() {
                     className="z-10 flex flex-col items-center"
                 >
                     {/* Floating Logo */}
-                    <motion.div 
-                        variants={fadeUp} 
-                        animate={{ y: [0, -10, 0] }} 
-                        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                    <motion.div
+                        variants={fadeUp}
+                        animate={{ y: [0, -10, 0] }}
+                        transition={{
+                            duration: 4,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
                         className="mb-8"
                     >
                         <Image
@@ -113,9 +130,7 @@ export default function Home() {
                         variants={fadeUp}
                         className="text-4xl md:text-7xl font-light tracking-widest mb-6 uppercase"
                     >
-                        <span className={goldGradientText}>
-                            Makeup Artist
-                        </span>
+                        <span className={goldGradientText}>Makeup Artist</span>
                     </motion.h1>
 
                     <motion.p
@@ -126,7 +141,10 @@ export default function Home() {
                         & Film Makeup.
                     </motion.p>
 
-                    <motion.div variants={fadeUp} className="flex items-center gap-3 mb-12 opacity-80">
+                    <motion.div
+                        variants={fadeUp}
+                        className="flex items-center gap-3 mb-12 opacity-80"
+                    >
                         <Camera className="w-5 h-5 text-[#BF953F]" />
                         <p className="text-md md:text-lg text-[#FCF6BA] italic">
                             Now Available for Film & Professional Shoots
@@ -156,18 +174,41 @@ export default function Home() {
                 className="relative py-32 px-6 bg-[#0a0a0a]"
             >
                 <div className="max-w-4xl mx-auto text-center space-y-8">
-                    <motion.h2 variants={fadeUp} className={`text-4xl md:text-5xl font-light ${goldGradientText}`}>
+                    <motion.h2
+                        variants={fadeUp}
+                        className={`text-4xl md:text-5xl font-light ${goldGradientText}`}
+                    >
                         About Seshu Kumari
                     </motion.h2>
 
                     <div className="h-px w-32 bg-gradient-to-r from-transparent via-[#BF953F] to-transparent mx-auto" />
 
-                    <motion.p variants={fadeUp} className="text-xl text-gray-400 leading-relaxed font-light">
-                        With over <span className="text-[#FCF6BA] font-medium">22 years of experience</span> in the beauty industry, Seshu Kumari is a highly respected professional makeup artist specializing in bridal, fashion show, party, and film makeup.
+                    <motion.p
+                        variants={fadeUp}
+                        className="text-xl text-gray-400 leading-relaxed font-light"
+                    >
+                        With over{" "}
+                        <span className="text-[#FCF6BA] font-medium">
+                            22 years of experience
+                        </span>{" "}
+                        in the beauty industry, Seshu Kumari is a highly
+                        respected professional makeup artist specializing in
+                        bridal, fashion show, party, and film makeup.
                     </motion.p>
 
-                    <motion.p variants={fadeUp} className="text-xl text-gray-400 leading-relaxed font-light">
-                        She currently manages three successful salons and an aesthetic center in <span className="text-white">Hyderabad, Guntur, and Narasaraopet</span>, leading a dedicated team of 25 professionals. A Bachelor of Arts graduate, she combines artistic creativity with professional expertise to deliver flawless results for every occasion.
+                    <motion.p
+                        variants={fadeUp}
+                        className="text-xl text-gray-400 leading-relaxed font-light"
+                    >
+                        She currently manages three successful salons and an
+                        aesthetic center in{" "}
+                        <span className="text-white">
+                            Hyderabad, Guntur, and Narasaraopet
+                        </span>
+                        , leading a dedicated team of 25 professionals. A
+                        Bachelor of Arts graduate, she combines artistic
+                        creativity with professional expertise to deliver
+                        flawless results for every occasion.
                     </motion.p>
                 </div>
             </motion.section>
@@ -193,10 +234,26 @@ export default function Home() {
                         className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
                     >
                         {[
-                            { title: "Bridal Makeup", icon: Crown, desc: "Elegant, long-lasting bridal looks tailored to enhance natural beauty for weddings and special ceremonies." },
-                            { title: "Fashion Show", icon: Sparkles, desc: "Creative and high-impact looks designed for runway, modeling events, and professional showcases." },
-                            { title: "Party Makeup", icon: GlassWater, desc: "Glamorous and modern styles perfect for parties, receptions, and social high-profile events." },
-                            { title: "Film & Shoot", icon: Camera, desc: "Professional makeup for cinema, advertisements, and production shoots with precision and artistry." },
+                            {
+                                title: "Bridal Makeup",
+                                icon: Crown,
+                                desc: "Elegant, long-lasting bridal looks tailored to enhance natural beauty for weddings and special ceremonies.",
+                            },
+                            {
+                                title: "Fashion Show",
+                                icon: Sparkles,
+                                desc: "Creative and high-impact looks designed for runway, modeling events, and professional showcases.",
+                            },
+                            {
+                                title: "Party Makeup",
+                                icon: GlassWater,
+                                desc: "Glamorous and modern styles perfect for parties, receptions, and social high-profile events.",
+                            },
+                            {
+                                title: "Film & Shoot",
+                                icon: Camera,
+                                desc: "Professional makeup for cinema, advertisements, and production shoots with precision and artistry.",
+                            },
                         ].map((service, index) => {
                             const Icon = service.icon;
                             return (
@@ -261,14 +318,17 @@ export default function Home() {
             </section>
 
             {/* CONTACT SECTION */}
-            <section id="contact" className="relative py-32 px-6 bg-[#050505]">
+            <section
+                id="contact"
+                className="relative py-32 px-4 sm:px-6 bg-[#050505]"
+            >
                 <div className="max-w-4xl mx-auto">
                     <motion.h2
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={fadeUp}
-                        className={`text-4xl md:text-5xl font-light mb-12 text-center ${goldGradientText}`}
+                        className={`text-3xl sm:text-4xl md:text-5xl font-light mb-12 text-center ${goldGradientText}`}
                     >
                         Contact & Bookings
                     </motion.h2>
@@ -278,59 +338,90 @@ export default function Home() {
                         whileInView="visible"
                         viewport={{ once: true }}
                         variants={staggerContainer}
-                        className="bg-[#0a0a0a] border border-white/5 p-8 md:p-14 rounded-3xl flex flex-col gap-8 shadow-2xl relative overflow-hidden"
+                        className="bg-[#0a0a0a] border border-white/5 p-6 sm:p-10 md:p-14 rounded-3xl flex flex-col gap-8 shadow-2xl relative overflow-hidden"
                     >
                         {/* Subtle inner glow */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-[#BF953F] opacity-5 blur-[100px] pointer-events-none" />
 
                         {/* Phone Row */}
-                        <motion.div variants={fadeUp} className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-white/5 pb-6 gap-4">
+                        <motion.div
+                            variants={fadeUp}
+                            className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-white/5 pb-6 gap-3 md:gap-4"
+                        >
                             <div className="flex items-center gap-3">
-                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F]">
+                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F] shrink-0">
                                     <Phone className="w-5 h-5" />
                                 </div>
-                                <span className="text-gray-400 text-sm uppercase tracking-widest font-medium">Direct Line</span>
+                                <span className="text-gray-400 text-xs sm:text-sm uppercase tracking-widest font-medium">
+                                    Direct Line
+                                </span>
                             </div>
-                            <a href="tel:+919849013227" className="text-2xl text-gray-200 hover:text-[#FCF6BA] transition-colors font-light ml-14 md:ml-0">
+                            <a
+                                href="tel:+919849013227"
+                                className="text-xl sm:text-2xl text-gray-200 hover:text-[#FCF6BA] transition-colors font-light ml-14 md:ml-0"
+                            >
                                 +91 98490 13227
                             </a>
                         </motion.div>
 
                         {/* Email Row */}
-                        <motion.div variants={fadeUp} className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-white/5 pb-6 gap-4">
+                        <motion.div
+                            variants={fadeUp}
+                            className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-white/5 pb-6 gap-3 md:gap-4"
+                        >
                             <div className="flex items-center gap-3">
-                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F]">
+                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F] shrink-0">
                                     <Mail className="w-5 h-5" />
                                 </div>
-                                <span className="text-gray-400 text-sm uppercase tracking-widest font-medium">Email Address</span>
+                                <span className="text-gray-400 text-xs sm:text-sm uppercase tracking-widest font-medium">
+                                    Email Address
+                                </span>
                             </div>
-                            <a href="mailto:seshukumari2002@gmail.com" className="text-xl text-gray-200 hover:text-[#FCF6BA] transition-colors font-light ml-14 md:ml-0">
+                            <a
+                                href="mailto:seshukumari2002@gmail.com"
+                                className="text-base sm:text-xl text-gray-200 hover:text-[#FCF6BA] transition-colors font-light ml-14 md:ml-0 break-all md:break-normal"
+                            >
                                 seshukumari2002@gmail.com
                             </a>
                         </motion.div>
 
                         {/* Instagram Row */}
-                        <motion.div variants={fadeUp} className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-white/5 pb-6 gap-4">
+                        <motion.div
+                            variants={fadeUp}
+                            className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-white/5 pb-6 gap-3 md:gap-4"
+                        >
                             <div className="flex items-center gap-3">
-                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F]">
+                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F] shrink-0">
                                     <Instagram className="w-5 h-5" />
                                 </div>
-                                <span className="text-gray-400 text-sm uppercase tracking-widest font-medium">Instagram</span>
+                                <span className="text-gray-400 text-xs sm:text-sm uppercase tracking-widest font-medium">
+                                    Instagram
+                                </span>
                             </div>
-                            <a href="https://www.instagram.com/seshu388" target="_blank" rel="noreferrer" className="text-xl text-gray-200 hover:text-[#FCF6BA] transition-colors font-light ml-14 md:ml-0">
+                            <a
+                                href="https://www.instagram.com/seshu388"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-base sm:text-xl text-gray-200 hover:text-[#FCF6BA] transition-colors font-light ml-14 md:ml-0"
+                            >
                                 @seshu388
                             </a>
                         </motion.div>
 
                         {/* Locations */}
-                        <motion.div variants={fadeUp} className="flex flex-col md:flex-row md:justify-between md:items-center pt-2 gap-4">
+                        <motion.div
+                            variants={fadeUp}
+                            className="flex flex-col md:flex-row md:justify-between md:items-center pt-2 gap-3 md:gap-4"
+                        >
                             <div className="flex items-center gap-3">
-                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F]">
+                                <div className="p-3 rounded-full bg-white/[0.03] text-[#BF953F] shrink-0">
                                     <MapPin className="w-5 h-5" />
                                 </div>
-                                <span className="text-gray-400 text-sm uppercase tracking-widest font-medium">Studios</span>
+                                <span className="text-gray-400 text-xs sm:text-sm uppercase tracking-widest font-medium">
+                                    Studios
+                                </span>
                             </div>
-                            <span className="text-lg text-[#FCF6BA] font-light ml-14 md:ml-0">
+                            <span className="text-base sm:text-lg text-[#FCF6BA] font-light ml-14 md:ml-0 leading-relaxed pr-2">
                                 Hyderabad • Guntur • Narasaraopet
                             </span>
                         </motion.div>
