@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   // 1. Core SEO
-  metadataBase: new URL("https://www.yourdomain.com"), // REPLACE WITH ACTUAL DOMAIN
+  // metadataBase: new URL("https://www.yourdomain.com"), // REPLACE WITH ACTUAL DOMAIN
   title: {
     default: "Seshu Kumari | Premium Professional Makeup Artist",
     template: "%s | Seshu Kumari", // Sub-pages will show as "Gallery | Seshu Kumari"
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://www.yourdomain.com", // REPLACE WITH ACTUAL DOMAIN
+    // url: "https://www.yourdomain.com", // REPLACE WITH ACTUAL DOMAIN
     title: "Seshu Kumari | Premium Professional Makeup Artist",
     description:
       "Award-winning makeup artistry with 22+ years of experience in Bridal, Fashion, and Film. Book your consultation today.",
@@ -77,14 +77,14 @@ export const metadata: Metadata = {
   },
 
   // 5. Canonical URLs (Prevents duplicate content penalties)
-  alternates: {
-    canonical: "https://www.yourdomain.com", // REPLACE WITH ACTUAL DOMAIN
-  },
+  // alternates: {
+  //   canonical: "https://www.yourdomain.com", // REPLACE WITH ACTUAL DOMAIN
+  // },
 
   // 6. Verification (For Google Search Console - Add your code later)
-  verification: {
-    google: "your-google-site-verification-code", 
-  },
+  // verification: {
+  //   google: "your-google-site-verification-code", 
+  // },
 };
 
 export default function RootLayout({
